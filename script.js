@@ -73,6 +73,7 @@ function getColor(vote) {
 	}
 }
 
+// Search for movie functionality
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
 
