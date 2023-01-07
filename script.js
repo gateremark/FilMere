@@ -4,7 +4,11 @@ const BASE_URL = "https://api.themoviedb.org/3";
 // const API_URL = BASE_URL + "/discover/movie?sort_by=popularity.desc&" + API_KEY;
 const API_URL = `${BASE_URL}/discover/movie?sort_by=popularity.desc&${API_KEY}`; // Template literal
 const IMAGE_URL = "https://image.tmdb.org/t/p/w500";
-const main = document.getElementById("main");
+const SEARCH_URL = `${BASE_URL}/search/movie?${API_KEY}`;
+
+const main = document.querySelector("#main");
+const form = document.querySelector("#form");
+const search = document.querySelector("#search");
 
 // Function Declaration
 // function getMovies(url) {
@@ -50,7 +54,32 @@ function showMovies(data) {
 	});
 }
 
-// Function to change the vote color
+// Function to change the vote color -- Kinda not Working when using ternary operator. 😊
+// function getColor(vote) {
+// 	vote >= 8
+// 		? console.log("green")
+// 		: vote >= 5
+// 		? console.log("orange")
+// 		: console.log("red");
+// }
+
 function getColor(vote) {
-	vote >= 8 ? "green" : vote >= 5 ? "orange" : "red";
+	if (vote >= 8) {
+		return "green";
+	} else if (vote >= 5) {
+		return "orange";
+	} else {
+		return "green";
+	}
 }
+
+form.addEventListener("submit", (e) => {
+	e.preventDefault();
+
+	const searchTerm = search.value;
+	if (searchTerm) {
+		getMovies(`${SEARCH_URL}&query=${searchTerm}`);
+	} else {
+		getMovies(API_URL);
+	}
+});
