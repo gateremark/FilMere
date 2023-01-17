@@ -41,6 +41,28 @@ header {
 	);
 }
 
+header ul li {
+	font-size: 22px;
+	font-family: cursive;
+	list-style: none;
+	border-radius: 5px;
+	background: linear-gradient(
+		-45deg,
+		var(--primary-color),
+		var(--secondary-color)
+	);
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	transition: color 0.5s;
+}
+
+header ul li:hover {
+	background: linear-gradient(-45deg, #c3c3c3, #fff);
+	color: var(--secondary-color);
+}
+
 .logo {
 	width: auto;
 	height: 50px;
