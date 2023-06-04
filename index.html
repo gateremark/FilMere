@@ -20,46 +20,30 @@
 				/>
 			</form>
 		</header>
-		<main id="main">
-			<div class="movie">
-				<img src="img/bg.png" alt="Movie Image" />
-				<div class="movie-info">
-					<h3>Movie Title</h3>
-					<span class="green">9.8</span>
-				</div>
-				<div class="overview">
-					<h3>Overview</h3>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eius
-					sunt nulla veniam esse dolor maiores ab nesciunt veritatis excepturi?
-				</div>
-			</div>
+		<div id="tags"></div>
+		<div id="myNav" class="overlay">
+			<!-- Button to close the overlay navigation -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&times;</a
+			>
 
-			<div class="movie">
-				<img src="img/bg.png" alt="Movie Image" />
-				<div class="movie-info">
-					<h3>Movie Title</h3>
-					<span class="green">9.8</span>
-				</div>
-				<div class="overview">
-					<h3>Overview</h3>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eius
-					sunt nulla veniam esse dolor maiores ab nesciunt veritatis excepturi?
-				</div>
-			</div>
+			<!-- Overlay content -->
+			<div class="overlay-content" id="overlay-content"></div>
 
-			<div class="movie">
-				<img src="img/bg.png" alt="Movie Image" />
-				<div class="movie-info">
-					<h3>Movie Title</h3>
-					<span class="green">9.8</span>
-				</div>
-				<div class="overview">
-					<h3>Overview</h3>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eius
-					sunt nulla veniam esse dolor maiores ab nesciunt veritatis excepturi?
-				</div>
-			</div>
-		</main>
+			<a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow"
+				>&#8656;</a
+			>
+
+			<a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow"
+				>&#8658;</a
+			>
+		</div>
+		<main id="main"></main>
+		<div class="pagination">
+			<div class="page" id="prev">Previous Page</div>
+			<div class="current" id="current">1</div>
+			<div class="page" id="next">Next Page</div>
+		</div>
 
 		<script src="script.js"></script>
 		<script
