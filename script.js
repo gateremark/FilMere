@@ -100,6 +100,12 @@ var prevPage = 3;
 var lastUrl = "";
 var totalPages = 100;
 
+window.addEventListener("load", function () {
+	let loader = document.querySelector(".loader");
+	loader.style.display = "none"; // Hide the loader when the window finishes loading
+});
+
+
 var selectedGenre = [];
 setGenre();
 function setGenre() {
