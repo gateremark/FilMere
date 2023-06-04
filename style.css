@@ -177,7 +177,8 @@ main {
 }
 
 .tag.highlight {
-	background-color: red;
+	background-color: #fff;
+	color: #222550;
 }
 .no-results {
 	color: white;
