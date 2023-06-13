@@ -4,9 +4,11 @@ Link to live site - https://gateremark.github.io/FilMere/.
 This is a movie app project built using HTML, CSS, and JavaScript. It utilizes the TMDB API to fetch movie data and provides a user-friendly interface for users to browse and explore various movies.
 
 <div align="center">
-   
+<a href="https://gateremark.github.io/FilMere/">
+
 ![FilMere](https://gateremark.vercel.app/img/projects/projects_post_1.png)
-   
+
+</a> 
 </div>
 
 ## Features
