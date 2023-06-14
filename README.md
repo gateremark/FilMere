@@ -25,7 +25,7 @@ This is a movie app project built using HTML, CSS, and JavaScript. It utilizes t
    ```
 2. Navigate to the project directory:
    ```bash
-      cd Filmere
+   cd Filmere
    ```
 3. Open the index.html file in your preferred web browser or run a local server to view the movie app.
 
